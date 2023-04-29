@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .article {
+        color: green;
+      }
+      #title-info {
+        color: gray;
+      }
+      #title-info {
+        color: purple;
+      }
+      p {
+        color: red;
+      }
+      div p {
+        font-size: 2rem;
+        color: blue;
+      }
+      div + p {
+        font-size: 3rem !important;
+        background-color: beige;
+        color: black !important;
+      }
+      div ~ p {
+        font-size: medium;
+        color: aqua;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: blue;
+      }
+      a:active {
+        color: aqua;
+      }
+      button {
+        font-size: larger;
+        padding: 0.7rem 1rem;
+        background-color: brown;
+        color: white;
+      }
+      button:hover {
+        color: brown;
+        background-color: white;
+      }
+      button:active {
+        color: green;
+      }
+      .pseudo_class p {
+        display: none;
+        background-color: brown;
+        color: white;
+      }
+      .pseudo_class:hover p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, facere
+      dolore vero recusandae quidem minus quis, voluptas sint repellendus nihil
+      omnis nisi velit ab, mollitia voluptatibus. Praesentium officiis itaque
+      laudantium.
+    </p>
+    <p class="article" id="title-info">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, facere
+      dolore vero recusandae quidem minus quis, voluptas sint repellendus nihil
+      omnis nisi velit ab, mollitia voluptatibus. Praesentium officiis itaque
+      laudantium.
+    </p>
+    <p class="article">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, facere
+      dolore vero recusandae quidem minus quis, voluptas sint repellendus nihil
+      omnis nisi velit ab, mollitia voluptatibus. Praesentium officiis itaque
+      laudantium.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, facere
+      dolore vero recusandae quidem minus quis, voluptas sint repellendus nihil
+      omnis nisi velit ab, mollitia voluptatibus. Praesentium officiis itaque
+      laudantium.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, facere
+      dolore vero recusandae quidem minus quis, voluptas sint repellendus nihil
+      omnis nisi velit ab, mollitia voluptatibus. Praesentium officiis itaque
+      laudantium.
+    </p>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+        reiciendis ut ipsam accusamus maxime, animi adipisci nobis porro soluta,
+        officiis commodi illum et ratione aut expedita sapiente optio deserunt
+        iusto?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam
+        tempore libero error recusandae, beatae eaque labore fuga fugit est
+        dolorem perferendis? Quos, sapiente explicabo quasi dolores reiciendis
+        omnis deleniti!
+      </p>
+    </div>
+    <p>Sibling 1</p>
+    <p>Sibling 2</p>
+    <p>Sibling 3</p>
+    <div class="pseudo_class">
+      Hover Me
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ab
+        quidem iusto architecto, placeat harum repudiandae odit libero tenetur
+        ex nulla perferendis nobis. Enim laudantium adipisci iusto debitis!
+        Tenetur, molestias?
+      </p>
+    </div>
+    <p>sister 1</p>
+    <p>sister 2</p>
+    <hr />
+    <br />
+    <a href="https://www.google.com">Google</a> <br />
+    <br />
+    <button>Click Me</button>
+  </body>
+</html>

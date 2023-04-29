@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="space">
+        <h1>
+          <span id="emoji">⛅</span> <br />
+          Currently <span id="temp">21</span>°C in <span id="city">Tokyo</span>
+        </h1>
+        <h2>13° / <strong>23°</strong></h2>
+      </div>
+
+      <div class="forecast space">
+        <h3>🌧Tomorrow</h3>
+        <p>10° / 22°</p>
+      </div>
+
+      <div class="forecast space">
+        <h3>🌥 Saturday</h3>
+        <p>15° / 17°</p>
+      </div>
+
+      <div class="forecast space">
+        <h3>☀️ Sunday</h3>
+        <p>25° / 28°</p>
+      </div>
+
+      <div><button id="btn">Change City</button></div>
+      <p>Coded by Matt Dealc</p>
+    </div>
+    <script>
+      let Emoji = document.querySelector("#emoji");
+      let City = document.querySelector("#city");
+      console.log(City);
+      let Temp = document.querySelector("#temp");
+
+      console.log(Temp);
+      let btn = document.querySelector("#btn");
+      btn.onclick = () => {
+        let cityName = prompt("What city do you live in?");
+
+        let temperature = prompt("What temprature is it?");
+        while (isNaN(temperature)) {
+          temperature = prompt(
+            "What temprature is it? Please type the number!"
+          );
+        }
+        console.log(typeof temperature);
+        City.innerText = cityName;
+        Temp.innerText = temperature;
+        if (temperature < 16) {
+          Emoji.innerText = "🥶";
+        } else if (temperature <= 21) {
+          Emoji.innerText = "😬";
+        } else if (temperature > 21 && temperature < 28) {
+          Emoji.innerText = "😎";
+        } else {
+          Emoji.innerText = "🥵";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nest">
+        <form action="" id="frm">
+          <div class="input_data">
+            <label for="chk_yr"><strong>Year to check</strong></label>
+            <div class="icon" id="icon">
+              <i class="fa-solid fa-question qus"></i>
+              <div class="clip" id="clip">
+                <p>Help: Year to check</p>
+                <p class="line"></p>
+                <p>Enter the year to check if it is leap one or not.</p>
+              </div>
+            </div>
+            <div class="input_sec">
+              <input type="number" name="" id="chk_yr" placeholder="e.g.2023" />
+
+              <div class="error-msg" id="error-msg">
+                <sup>**</sup>Enter the year to check
+              </div>
+            </div>
+          </div>
+          <div>
+            <button id="btn">
+              <i class="fa-solid fa-calculator"></i>Calculate
+            </button>
+          </div>
+        </form>
+
+        <div id="result_section" class="result_section">
+          <div id="calc">
+            <i class="fa-solid fa-check chk"></i>Calculation results
+          </div>
+          <div id="calc_result">
+            <div id="calc_1">Is it a leap Year?</div>
+            <div id="calc_2">N0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

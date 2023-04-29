@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        gap: 10px;
+      }
+      .container > img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      .title {
+        height: 200px;
+        width: 500px;
+        background-color: black;
+        padding: 50px;
+        color: white;
+        text-align: center;
+      }
+      .media {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Hello World!</h1>
+    <div class="container">
+      <img src="./images/hotetatekyasin.jpg" alt="" style="order: 2" />
+
+      <img
+        src="./images/manuel-cosentino-n--CMLApjfI-unsplash.jpg"
+        alt=""
+        style="order: 1"
+      />
+
+      <img
+        src="./images/pascal-debrunner-X4Lj9LB5XAI-unsplash.jpg"
+        alt=""
+        style="order: 4"
+      />
+
+      <img
+        src="./images/sara-dubler-Koei_7yYtIo-unsplash.jpg"
+        alt=""
+        style="order: 3"
+      />
+
+      <img
+        src="./images/Screenshot 2022-10-20 195321.png"
+        alt=""
+        style="order: 6"
+      />
+
+      <img
+        src="./images/sorasak-_UIN-pFfJ7c-unsplash.jpg"
+        alt=""
+        style="order: 5"
+      />
+    </div>
+    <div class="media">
+      <iframe
+        width="460"
+        height="315"
+        src="https://www.youtube.com/embed/4XZz3WXRw0A"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <video
+        src="./images/coverr--07-022-22-girl-with-analog-camera_0011-6845-1080p.mp4"
+        controls
+        width="460"
+        height="315"
+        autoplay
+      ></video>
+    </div>
+  </body>
+</html>

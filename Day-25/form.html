@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" id="frm">
+      <label for="fname">First Name</label>
+      <input type="tel" id="fname" name="FirstName" /> <br />
+      <br />
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="LastName" /> <br />
+      <br />
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" name="Password" /> <br />
+      <br />
+      <label for="file">Files</label>
+      <input type="file" name="" id="file" />
+      <textarea name="" id="" cols="30" rows="10">Address</textarea>
+      <select name="" id="pet">
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Fish">Fish</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Snake">Snake</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+    <ul>
+      <li>cat</li>
+      <li>dog</li>
+      <li>snake</li>
+      <li>woolly mammal</li>
+      <li>dragon</li>
+    </ul>
+    <ol start="6" reversed>
+      <li>cat</li>
+      <li>dog</li>
+      <li>snake</li>
+      <li>woolly mammal</li>
+      <li>dragon</li>
+    </ol>
+
+    <!-- <script>
+      let fname = document.getElementById("fname");
+      let lname = document.getElementById("lname");
+      let pwd = document.getElementById("pwd");
+      console.log(fname, lname, pwd);
+      document.getElementById("frm").onsubmit = function (e) {
+        console.log(e);
+        console.log(document.getElementById("pet").value);
+        e.preventDefault();
+        let person = {
+          FirstName: fname.value,
+          LastName: lname.value,
+          Password: pwd.value,
+        };
+        console.log(person);
+      };
+    </script> -->
+  </body>
+</html>

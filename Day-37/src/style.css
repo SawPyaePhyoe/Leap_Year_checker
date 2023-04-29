@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.nest {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+.nest > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  border: 0.5px solid rgb(195, 193, 193);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 1rem 0;
+}
+.input_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.input_data > label {
+  font-size: 13px;
+}
+.input_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.error-msg {
+  font-size: 0.8rem;
+  color: red;
+  font-weight: 800;
+  display: none;
+}
+.icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #0e5d28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.3rem;
+  margin-right: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+.clip {
+  top: 20px;
+  padding-top: 2rem;
+  width: 15rem;
+
+  right: -102px;
+  position: absolute;
+  -webkit-clip-path: polygon(
+    0 18%,
+    40% 18%,
+    54% 0,
+    64% 17%,
+    100% 18%,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 18%,
+    40% 18%,
+    54% 0,
+    64% 17%,
+    100% 18%,
+    100% 100%,
+    0 100%
+  );
+  background-color: rgb(207, 205, 205);
+  border: 1px solid rgb(207, 205, 205);
+  display: none;
+}
+.block {
+  display: block !important;
+}
+
+.clip :nth-child(1) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: rgb(207, 205, 205);
+}
+.clip :nth-child(3) {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-weight: 100;
+  padding: 1rem 1rem;
+  background-color: white;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+.qus {
+  font-size: 0.7rem;
+  color: white;
+}
+input {
+  appearance: none;
+  outline: none;
+  background-color: none;
+  border: none;
+}
+input::placeholder {
+  text-align: right;
+}
+
+#chk_yr {
+  width: 300px;
+  border: 1px solid black;
+  padding: 0.6rem;
+  border-radius: 5px;
+  text-align: right;
+}
+
+#chk_yr:focus {
+  border: 1px solid #88b3f1;
+  box-shadow: 0 0 0 3pt #c0d9fc;
+  transition: 0.1s;
+}
+#btn {
+  width: 680px;
+  padding: 0.8rem;
+  background-color: #c16829;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+#btn:hover {
+  background-color: #b2510d;
+}
+.result_section {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid rgb(195, 193, 193);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  width: 100%;
+  padding: 0.3rem 0;
+  align-items: center;
+  gap: 5px;
+  display: none;
+}
+#calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  color: white;
+  background-color: #1b6997;
+  padding: 0.7rem 0;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.error_box {
+  border: 1px solid rgb(198, 48, 48) !important;
+  box-shadow: 1px 1px 4px 1px rgb(198, 48, 48) !important;
+}
+.chk {
+  color: rgb(255, 190, 26);
+}
+#calc_result {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 99%;
+  background-color: #dee7ea;
+  padding: 0.7rem 0;
+  font-size: 14px;
+  line-height: 1.6rem;
+}
+#calc_1 {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 100;
+}
+#calc_2 {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  padding-right: 3rem;
+}
