@@ -8,6 +8,16 @@ while (!transfer_data) {
     prompt("1. Megabytes\n2. Gigabytes\n3. Terabytes\n4. Exit")
   );
 }
+while (!transfer_data) {
+  transfer_data = Number(
+    prompt("1. Megabytes\n2. Gigabytes\n3. Terabytes\n4. Exit")
+  );
+}
+while (transfer_data > 4) {
+  transfer_data = Number(
+    prompt("1. Megabytes\n2. Gigabytes\n3. Terabytes\n4. Exit")
+  );
+}
 
 switch (transfer_data) {
   case 1:
