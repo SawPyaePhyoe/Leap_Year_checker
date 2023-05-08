@@ -1,0 +1,121 @@
+:root {
+  --pink: rgb(254, 138, 158);
+  --purple: rgb(79, 3, 79);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input,
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+header {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+}
+#frm {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+#tsk {
+  flex: 1 1 0;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#btn {
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#btn:hover {
+  opacity: 0.8;
+}
+
+main {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-top: 0;
+  padding: 0.7rem;
+  align-items: center;
+}
+.task:first-child {
+  border-top: 1px solid black;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.task:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.content {
+  flex: 1 1 0;
+}
+.input_el {
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.input_el:not(:read-only) {
+  color: var(--pink);
+}
+.action {
+  display: flex;
+  gap: 12px;
+}
+.action button {
+  padding: 0.7rem 1.2rem;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.action > .edit {
+  color: green;
+  border: 1px solid green;
+}
+.action > .delete {
+  color: red;
+  border: 1px solid red;
+}
+.action > .edit:hover {
+  border: none;
+  background-color: green;
+  color: white;
+}
+.action > .delete:hover {
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
