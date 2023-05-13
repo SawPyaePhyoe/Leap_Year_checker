@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400&family=PT+Mono&family=PT+Serif:wght@400;700&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+/* !Start Home Section */
+#home {
+  height: 100vh;
+  background-image: url("./images/manuel-cosentino.jpg");
+  background-size: cover;
+  position: relative;
+}
+.container {
+  margin: 0 6rem;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+.home::before {
+  content: "H";
+  font-size: 26rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.692);
+  opacity: 0.2;
+  z-index: -1;
+  top: 5px;
+}
+.home-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: white;
+}
+.home-1 > .home-text > h1 {
+  font-size: 4rem;
+}
+.home-1 > .home-text > p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-left: 1rem;
+}
+.home-1 > .home-text > div > button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.home-1 .dots {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 5rem;
+}
+.home-1 .dots div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: white;
+}
+.home-1 .dots .active-dot {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.home-2 {
+  flex-basis: 30%;
+}
+.home-2 > .image {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: end;
+}
+.home-2 > .image > img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+}
+.active-img {
+  border: 1px solid white;
+}
+
+.home-3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+  background-color: blueviolet;
+  bottom: -55px;
+  position: absolute;
+  color: white;
+}
+.home-3 > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.home-3 input,
+.home-3 select {
+  padding: 1rem 1.5rem;
+  background-color: rgb(206, 177, 233);
+  border: none;
+}
+.home-3 .search {
+  background-color: #232339;
+  align-items: center;
+}
+
+.backoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.218);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* !End Home Section */
+
+@media (max-width: 900px) {
+  #home {
+    height: unset;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home-1 {
+    flex-basis: unset;
+  }
+  .home::before {
+    top: -40px !important;
+  }
+
+  .home-2 > .image {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+  .home-2 > .image > img {
+    height: 80px;
+    width: 125px;
+  }
+  .home-1 .dots {
+    display: none;
+  }
+}
