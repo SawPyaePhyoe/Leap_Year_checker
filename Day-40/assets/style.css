@@ -46,6 +46,7 @@ button:hover {
   width: 100%;
   padding: 3rem;
   background-color: blueviolet;
+  margin: -3rem 0;
 }
 /* !Start Home Section */
 #home {
@@ -235,6 +236,8 @@ button:hover {
 /* !Start Service Section */
 #service {
   margin-top: 7rem;
+  background-image: url("./images/sara-dubler.jpg");
+  background-size: cover;
 }
 .service {
   display: flex;
@@ -257,7 +260,126 @@ button:hover {
   flex-basis: 45%;
   align-items: center;
 }
+.card-items p {
+  font-size: 1rem;
+}
 /* !End Service Section */
+
+/* !Start Room Section */
+
+#room {
+  margin-top: 7rem;
+}
+.room {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.room-text > * {
+  margin-bottom: 0.7rem;
+}
+.room-btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.room-img {
+  flex-basis: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.room-img > div {
+  flex-grow: 1;
+}
+.room-img > div > img {
+  width: 100%;
+}
+
+/* !End Room Section */
+
+/* !Start review Section */
+#review {
+  background-image: url("./images/seefromthesky.jpg");
+  background-size: cover;
+  margin-top: 7rem;
+}
+.review {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+.review > .card {
+  padding: 4.5rem 3rem;
+}
+.review > .card > .card-title > .line {
+  background-color: white;
+}
+.card-title > * {
+  margin-bottom: 0.7rem;
+}
+.card-review {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-review > q {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.card-review > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.card-review > div > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+.user-info > p {
+  font-size: 0.9rem;
+}
+/* !End review Section */
+
+/* !Start Restaurant Section */
+#restaurant {
+  margin-top: 7rem;
+}
+.restaurant {
+  display: flex;
+  gap: 2rem;
+}
+.restaurant > img {
+  max-width: 500px;
+  max-height: 600px;
+  width: 100%;
+  height: auto;
+}
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.res-info > * {
+  margin-bottom: 1rem;
+}
+.accordian {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.accordian-items > input {
+  display: none;
+}
+/* !End Restaurant Section */
 
 @media (max-width: 900px) {
   /* home section */
@@ -298,6 +420,23 @@ button:hover {
   .about > .about-img {
     grid-template-columns: repeat(7, 10%);
     place-content: center;
+  }
+  /* service section */
+  .service {
+    justify-content: center;
+  }
+  /* room section */
+  .room-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .room-img > div {
+    flex-grow: unset;
+    flex-basis: 45%;
+  }
+  /* review section */
+  .review {
+    justify-content: center;
   }
 }
 @media (max-width: 426px) {
@@ -355,6 +494,42 @@ button:hover {
   }
   .about > .about-img {
     grid-template-columns: repeat(7, 1fr);
+  }
+  /* service section */
+  .service > .card {
+    padding: 3rem 1rem;
+  }
+  .card-items {
+    flex-wrap: wrap;
+  }
+
+  .card-items > div {
+    flex-basis: 100%;
+  }
+  /* room section */
+  .room-img > div {
+    flex-basis: 100%;
+  }
+  .room-btn {
+    right: unset;
+    top: unset;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  /* review section */
+  #review {
+    margin-top: 12rem;
+  }
+  .review > .card {
+    padding: 3rem 1rem;
+  }
+  .card-review {
+    margin-left: 1rem;
   }
 }
 
